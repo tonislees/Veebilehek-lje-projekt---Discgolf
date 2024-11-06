@@ -21,14 +21,14 @@
 }
 
 body {
-    background-color: rgb(255, 246, 216);
+    background-color: #92c9fa;
 }
 
 .päis {
     display: flex;
     flex-direction: row;
     padding: 20px;
-    background: #92c9fa;
+    background: rgb(255, 246, 216);
     text-align: left;
     color: 3d3d3d;
     font-size: 30px;
