@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.pealkiri, .tekst, .päise-nupp {
+    font-family: 'American Typewriter', serif;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.pealkiri {
+    font-size: 60px;
+    margin: 20px;
+}
+
+.tekst {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(255, 246, 216);
+}
+
+.päis {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background: #92c9fa;
+    text-align: left;
+    color: 3d3d3d;
+    font-size: 30px;
+    justify-content: space-between;
+}
+
+.päise-nupp {
+    font-size: 20px;
+    padding: 20px;
+    transition: backround-color 0.3s, color 0.3s;
+}
