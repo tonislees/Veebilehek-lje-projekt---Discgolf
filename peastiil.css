@@ -5,9 +5,9 @@
     text-decoration: none;
 }
 
-.pealkiri, .tekst, .päise-nupp {
+.pealkiri, .tekst, {
     font-family: 'American Typewriter', serif;
-    color: #3d3d3d;
+    color: white;
     text-align: center;
 }
 
@@ -21,22 +21,51 @@
 }
 
 body {
-    background-color: #92c9fa;
+    background-color: rgb(10, 10, 10);
 }
 
-.päis {
+/* Päise stiil */
+.header {
+    position: fixed; /* Fikseeritud päis, mis jääb lehe ülaservas */
+    top: 0; /* Päis asub täpselt ülaservas */
+    left: 0; /* Päis asub vasakul */
+    width: 100%; /* Laius on kogu ekraani ulatuses */
     display: flex;
-    flex-direction: row;
-    padding: 20px;
-    background: rgb(255, 246, 216);
-    text-align: left;
-    color: 3d3d3d;
-    font-size: 30px;
-    justify-content: space-between;
+    justify-content: space-evenly; /* Üksteise suhtes võrdselt jaotatud */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Tausta tumedam toon ja läbipaistvus */
+    backdrop-filter: blur(10px); /* Tausta hägustamine */
+    border-bottom: none; /* Alumine piir puudub */
+    z-index: 1000; /* Kõrgem z-index, et see oleks üle teiste elementide */
+    background-image: url("https://images.vexels.com/media/users/3/235903/isolated/preview/34148c24d7bffbf12ef109a557b7efbf-disc-golf-basket-with-frisbee-silhouette.png?w=360"); /* Logo lisamine taustapildina */
+    background-repeat: no-repeat; /* Tausta kordamine väljalülitatud */
+    background-position: 20px center; /* Paigutab logo vasakule ja keskele */
+    background-size: 50px; /* Määra logo suurus vastavalt vajadusele */
+    gap: 5px;
 }
 
-.päise-nupp {
-    font-size: 20px;
-    padding: 20px;
-    transition: backround-color 0.3s, color 0.3s;
+/* Nuputide konteiner */
+.header-buttons {
+    display: flex;
+    justify-content: space-between; /* Võrdne kaugus nuppude vahel */
+    width: 50%; /* Nuppude konteiner täidab 60% päisest (teise ja kolmanda veerandi peale) */
+    position: absolute;
+    left: 20%; /* Nuppude konteiner asub 20% päisest (keskendamiseks) */
+    top: 50%; /* Paigutab nuppude konteineri täpselt päise keskele */
+    transform: translateY(-50%); /* Täpselt keskjoonest, et paigutada nuppude konteiner keskele */
+}
+
+/* Nupu stiil */
+.header-button {
+    font-size: 25px;
+    color: white;
+    background-color: transparent; /* Ei ole tausta */
+    border: none; /* Ei ole piiri */
+    cursor: pointer;
+    padding: 0; /* Ei ole täiendavat sissetõmbet */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;  /* Et vältida tekstide liikumist väljaspool nuppu */
 }
