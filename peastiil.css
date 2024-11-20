@@ -5,67 +5,68 @@
     text-decoration: none;
 }
 
-.pealkiri, .tekst, {
+div {
+    outline: 1px solid rgb(100, 100 ,100, 0.5);
+}
+
+body {
+    background-color: rgb(20, 25, 44);
+}
+
+.pealkiri, .tekst, .alampealkiri {
     font-family: 'American Typewriter', serif;
     color: white;
-    text-align: center;
+    text-align: justify;
 }
 
 .pealkiri {
     font-size: 60px;
-    margin: 20px;
+}
+
+.alampealkiri {
+    font-size: 40px;
 }
 
 .tekst {
     font-size: 20px;
-}
-
-body {
-    background-color: rgb(10, 10, 10);
+    line-height: 1.5;
 }
 
 /* Päise stiil */
-.header {
-    position: fixed; /* Fikseeritud päis, mis jääb lehe ülaservas */
-    top: 0; /* Päis asub täpselt ülaservas */
-    left: 0; /* Päis asub vasakul */
-    width: 100%; /* Laius on kogu ekraani ulatuses */
+#päis {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly; /* Üksteise suhtes võrdselt jaotatud */
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.5); /* Tausta tumedam toon ja läbipaistvus */
-    backdrop-filter: blur(10px); /* Tausta hägustamine */
-    border-bottom: none; /* Alumine piir puudub */
-    z-index: 1000; /* Kõrgem z-index, et see oleks üle teiste elementide */
-    background-image: url("https://images.vexels.com/media/users/3/235903/isolated/preview/34148c24d7bffbf12ef109a557b7efbf-disc-golf-basket-with-frisbee-silhouette.png?w=360"); /* Logo lisamine taustapildina */
-    background-repeat: no-repeat; /* Tausta kordamine väljalülitatud */
-    background-position: 20px center; /* Paigutab logo vasakule ja keskele */
-    background-size: 50px; /* Määra logo suurus vastavalt vajadusele */
-    gap: 5px;
-}
-
-/* Nuputide konteiner */
-.header-buttons {
-    display: flex;
-    justify-content: space-between; /* Võrdne kaugus nuppude vahel */
-    width: 50%; /* Nuppude konteiner täidab 60% päisest (teise ja kolmanda veerandi peale) */
-    position: absolute;
-    left: 20%; /* Nuppude konteiner asub 20% päisest (keskendamiseks) */
-    top: 50%; /* Paigutab nuppude konteineri täpselt päise keskele */
-    transform: translateY(-50%); /* Täpselt keskjoonest, et paigutada nuppude konteiner keskele */
+    justify-content: stretch;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom: none;
+    z-index: 1000;
 }
 
 /* Nupu stiil */
-.header-button {
-    font-size: 25px;
-    color: white;
-    background-color: transparent; /* Ei ole tausta */
-    border: none; /* Ei ole piiri */
-    cursor: pointer;
-    padding: 0; /* Ei ole täiendavat sissetõmbet */
+.nupp {
     display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(100, 100 ,100, 0.3);
+    border-right: 1px solid rgb(100, 100 ,100, 0.3);
+    cursor: pointer;
     position: relative;
-    overflow: hidden;  /* Et vältida tekstide liikumist väljaspool nuppu */
+    overflow: hidden;
+    transition: font-size .3s;
+}
+
+.nupp:hover {
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
