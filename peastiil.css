@@ -6,30 +6,45 @@
 }
 
 div {
-    outline: 1px solid rgb(100, 100 ,100, 0.5);
+    outline: 2px solid rgb(100, 100 ,100, 0);
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: darkgray;
 }
 
 body {
-    background-color: rgb(20, 25, 44);
+    background-color: #0d2136;
 }
 
 .pealkiri, .tekst, .alampealkiri {
     font-family: 'American Typewriter', serif;
     color: white;
-    text-align: justify;
 }
 
 .pealkiri {
-    font-size: 60px;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 5px 5px 20px rgb(0, 0, 0, 1);
 }
 
 .alampealkiri {
-    font-size: 40px;
+    font-size: 50px;
+    text-shadow: 5px 5px 15px rgb(0, 0, 0, 1);
 }
 
 .tekst {
     font-size: 20px;
+    text-shadow: 0 0 10px rgb(0, 0, 0, 1);
     line-height: 1.5;
+    text-align: justify;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    transform-origin: center center;
 }
 
 /* Päise stiil */
@@ -40,11 +55,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: stretch;
-    height: 100px;
+    height: 10%;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border-bottom: none;
-    z-index: 1000;
+    z-index: 100;
 }
 
 /* Nupu stiil */
@@ -54,19 +69,21 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
     color: white;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgb(100, 100 ,100, 0.3);
     border-right: 1px solid rgb(100, 100 ,100, 0.3);
     cursor: pointer;
-    position: relative;
     overflow: hidden;
-    transition: font-size .3s;
+    transition: all 0.3s;
+}
+
+.nupp:hover .tekst{
+    padding-bottom: 2px;
+    transform: scale(1.2);
 }
 
 .nupp:hover {
-    font-size: 35px;
     background-color: rgba(0, 0, 0, 0.2);
 }
