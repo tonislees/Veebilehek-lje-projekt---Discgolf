@@ -50,10 +50,12 @@
 }
 
 
-#reeglid-tekst-konteiner {
+.reeglid-tekst-konteiner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+
     
 }
 
@@ -65,7 +67,7 @@
     }
 }
 
-#reeglid-pealkiri-ja-tekst {
+.reeglid-pealkiri-ja-tekst {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -74,13 +76,13 @@
     margin: 20px;
 }
 
-#reeglid-pealkiri {
+.reeglid-pealkiri {
     display: flex;
     justify-content: center;
     padding: 30px;
 }
 
-#reeglid-tekst {
+.reeglid-tekst {
     display: flex;
     justify-content: center;
     align-items: center;
