@@ -79,14 +79,15 @@
 .reeglid-pealkiri {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
 }
 
 .reeglid-tekst {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
 }
 
 #PDGA-pealkiri-ja-tekst {
@@ -103,7 +104,7 @@
 
 #PDGA-tekst {
     display: flex;
-    padding: 60px;
+    padding: 40px;
 }
 
 .PDGAtekst {
@@ -151,5 +152,5 @@
     border-bottom-left-radius: 60px;
     background-color: rgb(0, 0, 0, 0.6);
     align-items: center;
-    padding: 60px;
+    padding: 40px;
 }
