@@ -51,7 +51,7 @@
     width: 80%;
 }
 
-/* Lennunumbrid ###############################################*/
+/* ########################################################################################################*/
 
 #lennunumbrid-konteiner {
     display: flex;
@@ -188,7 +188,7 @@
     color: white;
 }
 
-/* Kettatüübid ####################################################*/
+/* ######################################################################################################*/
 
 #ketta-tüübid-konteiner {
     display: flex;
@@ -207,7 +207,7 @@
     width: 40%;
     padding: 0 3%;
     box-shadow: 0 0 15px 5px rgb(0, 0, 0, 0.2);
-    border-radius: 60px;
+    border-radius: 30px;
     background-color: #0c1e31;
     margin: 5%;
 }
@@ -225,7 +225,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 3%;
+    padding: 5%;
 }
 
 #ketta-tüübid-näited-konteiner {
@@ -413,7 +413,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: fit-content;
+    height: 100%;
+    min-height: fit-content;
 }
 
 #kettatootjad-sj-konteiner {
@@ -424,7 +425,7 @@
     align-items: center;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
-    margin: 10% 0;
+    margin: 8% 0;
     box-shadow: 0 0 20px 20px rgb(0, 0, 0, 0.2);
     background-image: url("https://images.unsplash.com/photo-1655161920449-cd10d9391f44?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: bottom;
@@ -517,7 +518,7 @@
 }
 
 .aktiivne {
-    background-color: #0a1a2b;
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
 .menüü-lahti {
@@ -533,7 +534,7 @@
     display: none;
 }
 
-#innova, #prodigy, #discraft, #mvp, #trilogy {
+#innova, #prodigy, #discraft, #trilogy {
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -565,30 +566,43 @@
 
 .kettatootja-sj-pilt-konteiner {
     display: flex;
-    width: 100%;
-    max-height: fit-content;
+    width: fit-content;
+    align-self: end;
     align-items: center;
-    justify-content: right;
-}
-
-.kettatootja-sj-pilt {
-    width: 60%;
-    height: 300px;
-    object-fit: contain;
-    padding: 3%;
-    margin: 5% 0;
+    margin: 3% 0;
+    padding: 2%;
+    gap: 2%;
     background-color: rgb(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-top-left-radius: 60px;
     border-bottom-left-radius: 60px;
     box-shadow: 0 0 20px 20px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.kettatootja-sj-pilt {
+    width: 45vw;
+    object-fit: cover;
+}
+
+#invert-logo {
+    filter: invert();
+}
+
+.trilogy-konteiner {
+    padding: 5%;
+}
+
+.trilogy {
+    width: 20vw;
+    height: fit-content;
 }
 
 .kettatootja-näide-sj-tekst {
     width: 60%;
     max-height: fit-content;
     padding: 3em;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     background-color: rgb(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-top-right-radius: 60px;
@@ -608,7 +622,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 55%;
+    width: 45%;
     background-color: #0c1e31;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -671,27 +685,34 @@
     background-color: #091726;
     box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.2);
     text-align: center;
-    height: 150px;
-    min-width: 150px;
+    height: 180px;
+    min-width: 180px;
     margin: 30px;
+}
+
+.plastikud-piltide-konteiner {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: end;
 }
 
 .plastikud-pilt-konteiner {
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    height: fit-content;
-    max-width: 40%;
+    width: 100%;
+    margin: 5% 0;
     border-top-left-radius: 60px;
     border-bottom-left-radius: 60px;
     box-shadow: 0 0 15px 5px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .plastikud-pilt {
-    width: 170%;
-    object-fit: contain;
-    border-top-left-radius: 60px;
-    border-bottom-left-radius: 60px;
+    object-fit: cover;
+    width: 150%;
+    min-height: 1000px;
+    max-height: 1000PX;
 }
 
 .kettakaart-konteiner {
@@ -714,23 +735,28 @@
     justify-content: center;
     align-items: center;
     background-color: #0a1a2b;
-    padding: 2% 3%;
+    padding: 2%;
+    gap: 3%;
     border-radius: 30px;
     box-shadow: 0 0 15px 5px rgb(0, 0, 0, 0.2);
 }
 
 .kettakaart {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    padding: 3%;
+    gap: 3%;
 }
 
-.ketta-kaart-pilt {
+.kettakaart-pilt-konteiner {
+    display: flex;
+    flex: 1 1 40%;
+    max-width: 95%;
+}
+
+.kettakaart-pilt {
+    width: 100%;
     object-fit: contain;
-    width: 45%;
-    margin: 3%;
     border-radius: 60px;
-    background-color: #0c1e31;
     box-shadow: 0 0 15px 5px rgb(0, 0, 0, 0.2);
     height: auto;
 }
