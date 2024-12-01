@@ -585,7 +585,7 @@
     object-fit: cover;
 }
 
-#invert-logo {
+.invert-logo {
     filter: invert();
 }
 
@@ -644,7 +644,6 @@
 .plastikud {
     display: flex;
     flex-direction: column;
-    max-height: fit-contents;
 }
 
 .plastik {
