@@ -1,3 +1,5 @@
+// See video on pärit videost: 
+
 // 1. Valime konteineri, mille sees slaidid asuvad, ja kõik "slaidid", mis sisaldavad sisu, mida liigelda.
 // container on kogu sisu konteiner.
 const container = document.querySelector(".container");

@@ -310,10 +310,6 @@ svg {
     left: 10vw;
     width: 80vw;
     z-index: 100;
-
-    .mask {
-        width: 1;
-    }
 }
 
 .ajajoon-pealkiri {
