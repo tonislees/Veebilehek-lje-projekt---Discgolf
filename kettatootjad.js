@@ -1,4 +1,5 @@
-// Selle koodi kirjutas Tõnis Lees
+// See kood on pärit videost: https://www.youtube.com/watch?v=hBbrGFCszU4&ab_channel=QuickCodingTuts
+// ning seda on kohandatud ja täiendatud ülejäänuga vastavaks.
 
 document.addEventListener('DOMContentLoaded', () => {  // Ootab, et terve leht oleks laetud
     // Leiab dropdown-menüü klassiga div elemendi

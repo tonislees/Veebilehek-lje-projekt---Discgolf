@@ -5,10 +5,6 @@
     text-decoration: none;
 }
 
-div {
-    outline: 2px solid rgb(100, 100 ,100, 0);
-}
-
 a {
     color: grey;
 }

@@ -1,9 +1,9 @@
 # Kettagolfi tutvustus
 
+Selle veebilehe eesmärk on tutvustada kasutajale kettagolfi, selle ajalugu ja selle reegleid. Vaadata saab erinevaid pilte, lugeda põnevaid fakte, võrrelda kettaid, leida kettagolfi radasid enda läheduses. Leht koosneb kolmest osast: pealeht, reeglite leht ja ketaste leht. Pealehel on spordiala üleüldine tutvustus ja kokkuvõte ajaloost ja võimalus leida oma lähedusest kettagolfi radasid, reeglite lehel on ülevaade reeglitest ja õpetus, kuidas alustada ning ketaste lehel on kogu vajalik info, mida ketaste ostmisel vaja läheb.
+
 Lehekülje koostajad on Tõnis Lees, Joosep Tiger Tilgar ja Hugo Arrak.
 
-Selle veebilehe eesmärk on tutvustada kasutajale kettagolfi, selle ajalugu ja selle reegleid. Vaadata saab erinevaid pilte, lugeda põnevaid fakte, võrrelda kettaid, leida kettagolfi radasid enda läheduses. Leht koosneb kolmest osast: pealeht, reeglite leht ja ketaste leht. Pealehel on spordiala üleüldine tutvustus ja kokkuvõte ajaloost ja võimalus leida oma lähedusest kettagolfi radasid, reeglite lehel on ülevaade reeglitest ja õpetus, kuidas alustada ning ketaste lehel on kogu vajalik info, mida ketaste ostmisel vaja läheb.
-s
 ## Tööjaotus:
 Pealeht - Joosep
 Reeglite leht - Hugo
