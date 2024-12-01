@@ -5,8 +5,10 @@ Selle veebilehe eesmärk on tutvustada kasutajale kettagolfi, selle ajalugu ja s
 Lehekülje koostajad on Tõnis Lees, Joosep Tiger Tilgar ja Hugo Arrak.
 
 ## Tööjaotus:
-Pealeht - Joosep
+Tutvustus- ehk pealeht - Joosep
+
 Reeglite leht - Hugo
+
 Ketaste leht - Tõnis
 
 ## Rühmatöö põhimõtted:
