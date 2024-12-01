@@ -140,10 +140,6 @@
 
 /*------------------------------------------------*/
 
-.kettagolf-taust {
-    background-color: rgb(20, 25, 44);
-}
-
 #sobivus-konteiner {
     position: relative;
     display: flex;
@@ -169,8 +165,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(10%);
+    filter: brightness(15%);
     z-index: -1;
+    overflow: hidden;
 }
 
 .sobivus-rida {
@@ -194,10 +191,9 @@
     display: flex;
     justify-content: space-between;
     min-height: 700px;
-    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.sobivus-raam:hover {
+.sobivus-sisu:hover {
     transform: scale(1.1);
     filter: brightness(1.6);
 }
@@ -211,6 +207,7 @@
     margin: 20px;
     position: relative;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .sobivus-pealkiri {
@@ -571,11 +568,12 @@ svg {
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
-    width: 100%;
-    padding-left: 150px;
-    padding-right: 150px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     overflow: hidden;
     box-sizing: border-box;
+    border-radius: 40px;
 }
 
 #kaart {
@@ -585,6 +583,7 @@ svg {
     width: 100%;
     border: 0;
     overflow: hidden;
+    border-radius: 40px;
 }
 
 #jalus {
