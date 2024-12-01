@@ -16,7 +16,7 @@ Ketaste leht - Tõnis
 4. On kursis tööga ja tähtaegadega.	
 5. On paindlik ja muudab vajadusel oma tööd.	
 
-## Välised moodulid
+## Välised moodulid:
 Projektis on kasutatud esimesel leheküljel ajajoones keerukama animatsiooni loomiseks kahte välist teeki moodulist nimega GSAP: [https://gsap.com/docs/v3/GSAP/](https://gsap.com/docs/v3/GSAP/).
 
 1. Teek **gsap.min.js** on GSAP-i põhiteek, mille abil saab luua mitmesuguseid animatsioone HTML-elementidele, SVG-dele, CSS-omadustele jne ning animeerida erinevate kujunduselementide liikumist ja animatsioonide käivitumist.
