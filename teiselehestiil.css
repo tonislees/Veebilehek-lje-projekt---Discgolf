@@ -57,7 +57,7 @@
 }
 
 @media (max-width: 800px) {
-    #reeglid-tekst-konteiner {
+    .reeglid-tekst-konteiner {
         display: flex;
         flex-direction: column;
         height: auto;
