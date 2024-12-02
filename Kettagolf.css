@@ -326,10 +326,6 @@ svg {
     left: 10vw;
     width: 80vw;
     z-index: 100;
-
-    .mask {
-        width: 1;
-    }
 }
 
 .ajajoon-pealkiri {
@@ -441,7 +437,7 @@ svg {
 .pildiraam {
     position: relative;
     align-items: center;
-    max-height: calc(100vw / 3);
+    max-height: calc(100vw / 3.3);
     width: 40%;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -520,13 +516,13 @@ svg {
 
 #aj-pilt12 {
     background: url("https://www.innovadiscs.com/wp-content/uploads/2018/10/mcbeth-usdgc-header.jpg");
-    background-size: 210%;
+    background-size: 240%;
     background-position: 40%;
 }
 
 #aj-pilt13 {
     background: url("https://coloradomtn.edu/wp-content/uploads/2024/07/3G0A0703-Enhanced-NR-scaled.jpg");
-    background-size: 160%;
+    background-size: 170%;
     background-position: 30%;
 }
 
